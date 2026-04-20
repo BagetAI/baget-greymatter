@@ -1,0 +1,262 @@
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #0F172A;
+    --sub-text: #64748B;
+    --accent-color: #2563EB;
+    --border-color: #E5E5E5;
+    --mono-font: 'JetBrains Mono', monospace;
+    --heading-font: 'Noto Sans JP', sans-serif;
+    --body-font: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.container.narrow {
+    max-width: 800px;
+}
+
+/* Typography */
+h1 {
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+}
+
+.mono-label {
+    font-family: var(--mono-font);
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    letter-spacing: 0.2em;
+    margin-bottom: 16px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: var(--mono-font);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 1.1rem;
+}
+
+.nav-cta {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--text-color);
+    transition: color 0.2s;
+}
+
+.nav-cta:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.hero-sub {
+    font-size: 1.25rem;
+    color: var(--sub-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form */
+.form-section {
+    padding: 60px 0;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    padding: 60px;
+    background: #FAFAFA;
+}
+
+.form-group {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: var(--accent-color);
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--text-color);
+    color: #FFF;
+    border: none;
+    font-family: var(--mono-font);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+.form-status {
+    margin-top: 16px;
+    font-size: 0.9rem;
+}
+
+/* Blueprint Image */
+.image-section {
+    padding: 40px 0;
+}
+
+.hero-blueprint {
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    opacity: 0.9;
+    border: 1px solid var(--border-color);
+}
+
+/* Pillars */
+.pillars {
+    padding: 100px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.pillar-num {
+    display: block;
+    font-family: var(--mono-font);
+    color: var(--sub-text);
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.pillar p {
+    color: var(--sub-text);
+    font-size: 0.95rem;
+}
+
+/* Quote */
+.quote {
+    padding: 100px 0;
+    background-color: #F8F9FA;
+    text-align: center;
+}
+
+blockquote {
+    font-family: var(--heading-font);
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+cite {
+    font-style: normal;
+    font-family: var(--mono-font);
+    font-size: 0.8rem;
+    color: var(--sub-text);
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+    padding: 80px 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    color: var(--sub-text);
+}
+
+.mono-text {
+    font-family: var(--mono-font);
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .grid { grid-template-columns: 1fr; }
+    .card { padding: 30px; }
+}
